@@ -1,0 +1,16 @@
+<ul class="post-single-list">
+{{#foreach posts}}
+  <li class="post-single-in-list">
+    <div class="post-single-date">
+      {{ date format="DD MMMM YYYY" }}
+    </div>
+    <div class="post-single-title">
+      <a href="{{url}}">
+        {{title}}
+      </a>
+    </div>
+  </li>
+{{/foreach}}
+</ul>
+
+{{pagination}}

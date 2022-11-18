@@ -1,28 +1,32 @@
-<footer class="footer">
-    {{#if @labs.subscribers}}
-        <section class="footer-subscribe">
-            <h4>Subscribe to {{@site.title}}</h4>
-            <p>Get the latest posts delivered right to your inbox</p>
-
-            {{subscribe_form placeholder="youremail@example.com"}}
-        </section>
-    {{/if}}
-
-    <nav class="footer-social">
-        <ul>
-            {{#if @site.facebook}}
-                <li><a href="{{facebook_url @site.facebook}}" rel="noopener" target="_blank">Facebook</a></li>
-            {{/if}}
-            {{#if @site.twitter}}
-                <li><a href="{{twitter_url @site.twitter}}" rel="noopener" target="_blank">Twitter</a></li>
-            {{/if}}
-        </ul>
-    </nav>
-
-    <section class="footer-copyright">
-        <a href="{{@site.url}}" title="{{@site.title}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}
-    </section>
-
-    <section class="footer-powerby">
-        <a href="https://github.com/nahuelsanchez/pale-ghost" title="Pale Ghost">Pale Ghost</a> theme by <a href="http://www.nahuelsanchez.com/" title="Nahuel Sanchez">Nahuel Sanchez</a>. Published with <a href="https://ghost.org" title="Ghost">Ghost</a>.</section>
+<footer id="footer">
+  {{#if @labs.subscribers}}
+  <div class="footer-subscribe">
+    <h4>Subscribe to {{@site.title}}</h4>
+    <p>Get the latest posts delivered right to your inbox</p>
+    {{subscribe_form placeholder="youremail@example.com"}}
+  </div>
+  {{/if}}
+  
+  <nav class="footer-social">
+    <ul>
+      {{#if @site.facebook}}
+      <li>
+        <a href="{{facebook_url @site.facebook}}" rel="noopener" target="_blank">
+          Facebook
+        </a>
+      </li>
+      {{/if}}
+      {{#if @site.twitter}}
+      <li>
+        <a href="{{twitter_url @site.twitter}}" rel="noopener" target="_blank">
+          Twitter
+        </a>
+      </li>
+      {{/if}}
+    </ul>
+  </nav>
+  
+  <div class="footer-copyright">
+    <a href="{{@site.url}}" title="{{@site.title}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}
+  </div>
 </footer>
