@@ -1,0 +1,7 @@
+<div class="text-5xl font-bold mb-4">
+  {{#is "post, page"}}
+    {{title}}
+  {{else}}
+    <a class="hover:underline" href="{{url}}" title="{{title}}">{{title}}</a>
+  {{/is}}
+</div>

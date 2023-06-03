@@ -1,0 +1,9 @@
+{{#foreach posts limit="all"}}
+  <div class="flex flex-row item-baseline">
+    <span>{{date format="YYYY-MM-DD"}}</span>
+    <span class="mr-4">:</span>
+    <a href="{{url}}">{{title}}</a>
+  </div>
+{{/foreach}}
+
+{{pagination}}

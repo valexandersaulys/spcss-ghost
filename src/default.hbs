@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+  {{> core/head}}
+  
+  <body class="poppins-font">
+    <div id="main" class="container mx-auto flex flex-col-reverse md:flex-row">      
+      <div class="flex-1 grow px-8 md:px-16 lg:px-32 pb-8 md:pb-16 lg:pb-32 w-full">
+
+        <div id="logo-header" class="mb-8">
+          {{#is "home"}}
+          <img class="" alt="{{@site.title}}" src="{{@site.logo}}" />
+          {{/is}}
+          {{#is "tag"}}
+          <a href="{{@site.url}}" title="{{@site.title}}">
+            <img class="" alt="{{@site.title}}" src="{{@site.logo}}" />
+          </a>
+          {{/is}}
+        </div>
+        
+        <div>
+          {{{body}}}
+        </div>
+        
+      </div>
+      {{> core/sidebar}}             
+    </div>        
+  </body>
+  
+  <script type="text/javascript">
+   document.addEventListener("DOMContentLoaded", (e) => {
+       document.querySelector("#mobile-menu-button").onclick = e => {
+           document.querySelector("#side-bar").classList.toggle("hidden");
+       }
+   });
+  </script>  
+</html>

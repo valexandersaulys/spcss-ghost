@@ -6,11 +6,7 @@
     "ghost": ">=2.0.0"
   },
   "license": "MIT",
-  "author": {
-    "name": "Vincent Alexander Saulys",
-    "email": "contact@saulys.me",
-    "website": "https://vincentsaulys.com"
-  },
+  "author": "Vincent Alexander Saulys <contact@saulys.me>",
   "gpm": {
     "type": "theme",
     "categories": [
@@ -40,7 +36,11 @@
   "homepage": "https://github.com/valexandersaulys/spcss-ghost#readme",
   "main": "index.js",
   "scripts": {
-    "check": "gscan ./",
-    "zip": "cd ../ && zip -r spcss-theme.zip spcss-ghost -x \"spcss-ghost/.git/*\" && cd spcss-theme"
+    "check": "gscan src/",
+    "watch": "npx tailwindcss -i input.tailwind.css -o ./src/assets/css/public.css --watch",
+    "build": "npx tailwindcss -i input.tailwind.css -o ./src/assets/css/public.css && zip theme.zip src -r -q"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
   }
 }

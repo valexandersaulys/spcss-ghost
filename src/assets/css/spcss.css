@@ -36,6 +36,7 @@ h4:hover a:empty, h5:hover a:empty, h6:hover a:empty {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 figure {
   margin: 1em 0;
@@ -102,6 +103,10 @@ ul {
     margin-right: 0.5rem;
 }
 ul.nav {}
+.post-authors {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
 ul.authors-list {
     display:inline;
     list-style-type: none;

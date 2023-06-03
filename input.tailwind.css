@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kg-width-wide,
+.kg-width-full,
+.kg-gallery-container,
+.kg-gallery-row,
+.kg-gallery-image {
+  font: inherit;
+}
+
+.poppins-font {
+    font-family: "Poppins", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a {
+    @apply hover:underline hover:text-blue-500 text-blue-600 active:text-blue-700 cursor-pointer
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@layer markdown {
+    #post-body {
+        p {
+            @apply font-normal text-base
+        }
+        figure {
+        }
+        h1 {
+            @apply text-2xl font-bold
+        }
+        h2 {
+            @apply text-xl 
+        }
+        pre {
+            @apply bg-gray-300            
+        }
+        code {
+            @apply font-mono
+        }        
+    }
+}

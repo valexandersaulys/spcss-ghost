@@ -1,26 +1,17 @@
-# SPCSS Ghost Blog
+# TailwindCSS Ghost Blog
 
-Inspired by [SPCSS](https://github.com/susam/spcss) from [susam.net](https://susam.net).
+Inspired by nothing in particular. A dead simple ghost blog. 
 
 
 ## Installation
 
 ```
 cd ..
-zip -r spcss-theme.zip spcss-ghost
+zip spcss-theme.zip spcss-ghost -r -x 'node_modules/' 
 cd spcss-ghost
 ```
 
-Then upload this to your blog
-
-
-## Common Issues
-
-### Ghost can't find my partials
-
-This happens if you create a zip file without a nested folder. That
-means it looks for partials in the wrong place. Your zip file should
-open up to one folder, not the files inside that folder. 
+Then upload this to your Ghost site. 
 
 
 

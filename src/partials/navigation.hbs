@@ -1,0 +1,10 @@
+<div class="mb-4">
+  <div class="text-2xl">
+    Pages
+  </div>
+  <ul class="flex flex-col list-disc list-inside">
+    {{#foreach navigation}}
+    <li><a href="{{url absolute="true"}}">{{label}}</a></li>
+    {{/foreach}}
+  </ul>
+</div>

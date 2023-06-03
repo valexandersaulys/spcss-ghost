@@ -1,0 +1,11 @@
+{
+  "name": "ghost-template-with-sidebar",
+  "version": "1.0.0",
+  "engines": {
+    "ghost": ">=2.0.0"
+  },
+  "author": {
+    "name": "Vincent Alexander Saulys",
+    "email": "vincent@saulys.me"
+  }
+}
