@@ -1,7 +1,7 @@
-{{#foreach posts limit="3"}}
+{{#foreach posts}}
   <div class="flex flex-row item-baseline">
-    <span>{{date format="YYYY-MM-DD"}}</span>
-    <span class="mr-4">:</span>
-    <a href="{{url}}">{{title}}</a>
+    <div class="font-mono text-right">{{date format="YYYY-MM-DD"}}</div>
+    <div class="mr-4">:</div>
+    <div class=""><a href="{{url}}">{{title}}</a></div>
   </div>
 {{/foreach}}

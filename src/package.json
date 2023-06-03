@@ -7,5 +7,17 @@
   "author": {
     "name": "Vincent Alexander Saulys",
     "email": "vincent@saulys.me"
-  }
+  },
+  "config": {
+    "posts_per_page": 9999
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "blank",
+    "dev",
+    "developer",
+    "development",
+    "ghost-theme"
+  ]  
 }

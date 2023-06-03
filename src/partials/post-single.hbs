@@ -2,9 +2,11 @@
   {{> post/feature-image }}  
   {{> post/title }}   
   {{> post/date }}
-  {{> post/tags-all }}  
+  {{#if tags}}
+    {{> post/tags-all }}
+  {{/if}}
 </div>
-<div id="post-body" class="flex flex-col gap-y-4 text-gray-800 text-xl">
+<div id="post-body" class="flex flex-col text-gray-800 text-xl max-w-3xl">
   {{#is "home"}}
     {{> post/excerpt}}
   {{else}}

@@ -21,26 +21,47 @@ a {
 img {
     max-width: 100%;
     height: auto;
+    @apply text-sm;
 }
 
-@layer markdown {
-    #post-body {
-        p {
-            @apply font-normal text-base
-        }
-        figure {
-        }
-        h1 {
-            @apply text-2xl font-bold
-        }
-        h2 {
-            @apply text-xl 
-        }
-        pre {
-            @apply bg-gray-300            
-        }
-        code {
-            @apply font-mono
-        }        
-    }
+#post-body {
+}
+#post-body p {
+    @apply font-normal text-base my-2 leading-relaxed
+}
+#post-body ol {
+    @apply font-normal my-2 list-decimal list-inside
+}
+#post-body ul {
+    @apply font-normal my-2 list-disc list-inside
+}
+#post-body li {
+    @apply my-1 font-normal text-base
+}
+#post-body figure {
+    @apply mx-auto;
+}
+#post-body figure > figcaption {
+    @apply mx-auto text-center text-sm italic
+}
+#post-body img {
+    max-width: 100%;
+    height: auto;
+    @apply mx-auto
+}
+#post-body h1 {
+    @apply text-3xl font-bold mt-16 mb-6
+}
+#post-body h2 {
+    @apply text-2xl mt-12 mb-4
+}
+
+#post-body > pre {
+    @apply my-2 p-2 md:p-4 bg-gray-200 overflow-x-scroll rounded-xl
+}
+#post-body > pre > code {
+    @apply text-sm
+}
+#post-body code {
+    @apply font-mono bg-gray-200 
 }
